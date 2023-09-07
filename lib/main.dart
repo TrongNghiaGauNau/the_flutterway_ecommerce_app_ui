@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:the_flutterway_ecommerce_app_ui/constant.dart';
-import 'package:the_flutterway_ecommerce_app_ui/screens/splash_screen.dart';
+import 'package:the_flutterway_ecommerce_app_ui/routes.dart';
+import 'package:the_flutterway_ecommerce_app_ui/screens/splash/splash_screen.dart';
+import 'package:the_flutterway_ecommerce_app_ui/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,16 +17,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        textTheme: const TextTheme(
-          bodyLarge: TextStyle(color: kTextColor),
-          bodyMedium: TextStyle(color: kTextColor),
-        ),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        useMaterial3: true,
-      ),
-      home: const SplashScreen(),
+      theme: theme(),
+      // home: const SplashScreen(),
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
     );
   }
 }
+
+
