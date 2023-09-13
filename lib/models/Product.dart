@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Product {
+  final int id;
   final String title, description;
   final List<String> images;
   final List<Color> colors;
@@ -8,6 +9,7 @@ class Product {
   final bool isFavorite, isPopular;
 
   Product({
+    required this.id,
     required this.images,
     required this.colors,
     this.rating = 0,
@@ -22,6 +24,7 @@ class Product {
 //Demo Product
 List<Product> demoProduct = [
   Product(
+    id: 0,
     images: [
       'assets/images/ps4_console_white_1.png',
       'assets/images/ps4_console_white_2.png',
@@ -42,9 +45,10 @@ List<Product> demoProduct = [
     isPopular: true,
   ),
   Product(
+    id:1,
     images: [
-      'assets/images/ps4_console_white_1.png',
       'assets/images/ps4_console_white_2.png',
+      'assets/images/ps4_console_white_1.png',
       'assets/images/ps4_console_white_3.png',
       'assets/images/ps4_console_white_4.png',
     ],
@@ -62,11 +66,12 @@ List<Product> demoProduct = [
     isPopular: true,
   ),
   Product(
+    id: 2,
     images: [
+      'assets/images/ps4_console_white_4.png',
       'assets/images/ps4_console_white_1.png',
       'assets/images/ps4_console_white_2.png',
       'assets/images/ps4_console_white_3.png',
-      'assets/images/ps4_console_white_4.png',
     ],
     colors: [
       const Color(0xFFF6625E),

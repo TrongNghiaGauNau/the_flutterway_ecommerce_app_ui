@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:the_flutterway_ecommerce_app_ui/screens/cart/cart_screen.dart';
 import 'package:the_flutterway_ecommerce_app_ui/screens/complete_profile/complete_profile_screen.dart';
 import 'package:the_flutterway_ecommerce_app_ui/screens/details/details_screen.dart';
 import 'package:the_flutterway_ecommerce_app_ui/screens/forgot_password/forgot_password_screen.dart';
@@ -19,4 +20,5 @@ final Map<String,WidgetBuilder> routes = {
   OtpScreen.routeName: (context) => const OtpScreen(),
   HomeScreen.routeName: (context) => const HomeScreen(),
   DetailScreen.routeName: (context) => const DetailScreen(),
+  CartScreen.routeName: (context) => const CartScreen(),
 };
